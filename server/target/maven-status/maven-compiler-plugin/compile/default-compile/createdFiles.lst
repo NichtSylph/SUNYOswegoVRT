@@ -1,0 +1,8 @@
+server\oswegovrtserver\LocationService.class
+server\oswegovrtserver\Location.class
+server\oswegovrtserver\EmailService.class
+server\oswegovrtserver\OswegovrtserverApplication.class
+server\oswegovrtserver\EmailController.class
+server\oswegovrtserver\LocationRepository.class
+server\oswegovrtserver\LocationController.class
+server\oswegovrtserver\UserInformation.class
