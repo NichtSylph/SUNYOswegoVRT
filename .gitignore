@@ -1,0 +1,28 @@
+# Dependency directories
+/client/node_modules/
+
+# Production build files
+/client/build/
+
+# Env files
+.env
+
+# Java/Maven build files
+/server/target/
+/server/.mvn/
+/server/mvnw
+/server/mvnw.cmd
+
+# Logs
+/server/*.log
+
+# IDE specific
+/server/.idea/
+/server/*.iml
+/server/.classpath
+/server/.project
+/server/.settings/
+
+# System files
+.DS_Store
+Thumbs.db

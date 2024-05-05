@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-OswegovrtserverApplication<oswegovrtserver>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "server.oswegovrtserver.OswegovrtserverApplication",
+            "projectName": "oswegovrtserver",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
