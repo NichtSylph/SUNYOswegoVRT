@@ -1,0 +1,21 @@
+.background-video {
+    position: fixed; /* Use fixed to ensure it covers the entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Keep it behind all other content */
+    overflow: hidden; /* Prevent scroll bars */
+  }
+  
+  .background-video video {
+    width: 100vw; 
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

@@ -1,0 +1,89 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* High z-index to ensure it's above everything else */
+  }
+  
+  .popup-container {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+  
+  .popup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .vertical-bar-popup{
+    width: 10px;
+    height: 45px;
+    background-color: #258C61;
+    margin-right: 10px;
+  }
+  
+  .popup-title {
+    font-weight: bold;
+    margin-top: 20px;
+    flex: 1; 
+}
+
+  .popup-logo {
+    height: 60px;
+    margin-bottom: 15px;
+    margin-left: auto; 
+  }
+  
+  .popup-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .popup-form input[type="text"],
+  .popup-form input[type="email"],
+  .popup-form input[type="tel"],
+  .popup-form input[type="date"],
+  .popup-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px; 
+  }
+
+  .submit-button, .skip-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #258C61;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .skip-button {
+    background-color: transparent;
+    color: #258C61;
+    text-decoration: underline;
+  }
+  
+  select[name="educationLevel"] option[value=""] {
+    color: grey;
+  }
+  
+  .submit-button:hover, .skip-button:hover {
+    opacity: 0.8;
+  }
+  

@@ -1,0 +1,40 @@
+.location-marker.location-marker-location:hover .map-pointer-icon,
+.location-marker.location-marker-location:hover .selected-pointer-icon {
+  transform: scale(1.1); /* Scale up the icons */
+  transition: transform 0.05s ease;
+}
+
+.location-marker.location-marker-location:hover .info-bubble-location {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.map-pointer-icon, .selected-pointer-icon {
+  width: 1.4vw; /* Use viewport width unit for relative icon size */
+  height: auto; /* Maintain the aspect ratio */
+  transition: transform 0.05s ease;
+}
+
+.selected-pointer-icon {
+  width: 2.7vw; /* Slightly larger icon size on hover */
+}
+
+.info-bubble-location {
+  height: auto; /* adjust as needed */
+  max-height: 300px; /* adjust as needed */
+}
+
+.location-number {
+  position: absolute;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 900;
+  font-size: 0.55vw; /* Use viewport width unit for relative font size */
+  color: #ffffff;
+  -webkit-text-stroke: 0.5px #000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 2; /* Make sure it's above the map-pointer-icon */
+}

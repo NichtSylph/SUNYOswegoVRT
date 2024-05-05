@@ -1,0 +1,19 @@
+.button-with-icon {
+    display: flex;
+    align-items: center;
+    background-color: #333; /* Adjust the color as needed */
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-with-icon:hover {
+    background-color: #555; /* Slightly lighter on hover */
+  }
+  
+  .button-icon {
+    margin-right: 10px;
+    width: 10px; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+  }

@@ -1,0 +1,15 @@
+.map-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  padding: 0; /* Adjust padding if necessary */
+  overflow: visible; /* Allow the InfoBubble to show outside the container */
+}
+
+.map-image {
+  width: 90%;
+  height: auto;
+  display: block;
+}
