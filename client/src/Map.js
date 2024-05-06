@@ -9,7 +9,7 @@ const Map = () => {
   const [selectedLocation, setSelectedLocation] = useState(null);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/api/locations`)
+    fetch(`${process.env.REACT_APP_API_URL}/api/locations`, { mode: 'no-cors' })
       .then(response => response.json())
       .then(data => {
         const processedData = data.map(location => {
