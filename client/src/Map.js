@@ -9,7 +9,7 @@ const Map = () => {
   const [selectedLocation, setSelectedLocation] = useState(null);
 
   useEffect(() => {
-    fetch('http://moxie.cs.oswego.edu:26884/api/locations')
+    fetch(`${process.env.REACT_APP_API_URL}/api/locations`)
       .then(response => response.json())
       .then(data => {
         const processedData = data.map(location => {
@@ -27,7 +27,7 @@ const Map = () => {
       })
       .catch(error => console.error('Error fetching locations:', error));
   }, []);
-  
+
   const handleMarkerHover = (location) => {
     setSelectedLocation(location);
   };
