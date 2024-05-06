@@ -13,7 +13,7 @@ const HelpComponent = () => {
     <div className="help-component"
          onMouseEnter={() => setIsHovered(true)}
          onMouseLeave={() => setIsHovered(false)}>
-      <img src={`${process.env.PUBLIC_URL}/resources/requestInfoIcon.svg`} alt="Help Icon" className="help-icon"/>
+      <img src={`${process.env.PUBLIC_URL}/resources/requestinfoIcon.svg`} alt="Help Icon" className="help-icon"/>
       {isHovered && <InfoBubble className="info-bubble-help" location={helpContent} />}
     </div>
   );

@@ -2,6 +2,9 @@
 FROM node:14 AS build
 WORKDIR /app
 
+# Arguments that can be passed at build time
+ARG REACT_APP_API_URL
+
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
@@ -10,6 +13,9 @@ RUN npm install
 
 # Copy the rest of app's source code from your host to your image filesystem.
 COPY . .
+
+# Setting up environment variables
+RUN echo "REACT_APP_API_URL=${REACT_APP_API_URL}" > .env
 
 # Build the application
 RUN npm run build

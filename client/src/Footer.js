@@ -44,7 +44,7 @@ const Footer = () => (
         rel="noopener noreferrer"
       >
         <img
-          src={`${process.env.PUBLIC_URL}/resources/requestInfoIcon.svg`}
+          src={`${process.env.PUBLIC_URL}/resources/requestinfoIcon.svg`}
           alt="Request Info Icon"
           className="button-icon"
         />

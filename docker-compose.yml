@@ -7,11 +7,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "26884:26884"
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:26884/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
     networks:
       - app-network
 
@@ -20,10 +15,10 @@ services:
     build:
       context: ./client
       dockerfile: Dockerfile
+      args:
+        REACT_APP_API_URL: http://moxie.cs.oswego.edu:26884
     ports:
       - "26885:26885"
-    environment:
-      - REACT_APP_API_URL=http://moxie.cs.oswego.edu:26884
     networks:
       - app-network
 
