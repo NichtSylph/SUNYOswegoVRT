@@ -5,4 +5,5 @@ server\oswegovrtserver\OswegovrtserverApplication.class
 server\oswegovrtserver\EmailController.class
 server\oswegovrtserver\LocationRepository.class
 server\oswegovrtserver\LocationController.class
+server\oswegovrtserver\WebConfig.class
 server\oswegovrtserver\UserInformation.class
